@@ -1,17 +1,260 @@
-header{
-    padding: 0;
+body {
+  padding: 0;
+  margin: 0;
+  display: flexbox;
+  box-sizing: border-box;
+  font-size: medium;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+/* HEADER */
+header {
+  background-color: rgb(247, 227, 197);
+  display: flexbox;
+  max-width: 100%;
+}
+.logo-nav {
+  margin: 10px;
+  padding: 0 30px;
+  border-radius: 50%;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  background-color: rgb(255, 237, 203);
+  list-style: none;
+  border: 1px solid rgb(226, 161, 81);
+  /*position: fixed;*/
+}
+.menu-header {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  list-style: none;
+  cursor: pointer;
+}
+.nav-item {
+  padding: 8px 12px;
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+.nav-item:hover {
+  background-color: rgb(255, 201, 119);
+  transition: 0.2s;
+}
+/* FIN HEADER*/
 
+/* ABOUT ME */
+.section-aboutme {
+  background-color: rgb(247, 227, 197);
+  display: flexbox;
 }
-.nav-header{
-    background-color: rgb(243, 193, 232);
-    
+.divs-header {
+  display: flex;
+  min-width: 550px;
+  min-height: 550px;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
-.menu-header{
-    color: black;
-    text-align:end;
-      
-    list-style: none;
+.div-aboutme {
+  display: flex;
+  padding: 70px 20px 0;
+  width: 50%;
 }
+.div-aboutme-hello {
+  display: flexbox;
+  padding: 50px 20px;
+  margin: 15px;
+  width: 50%;
+}
+.hello {
+  font-size: 40px;
+}
+.sofi {
+  font-size: 50px;
+  color: rgb(255, 149, 10);
+}
+.loquehago {
+  font-size: 20px;
+}
+.boton-loquehago {
+  font-size: 20px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.img-header {
+  /*muevo figcaption*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+img {
+  border-radius: 13%;
+  border: rgb(253, 253, 252) solid 1px;
+}
+.fig-img {
+  color: rgb(255, 162, 100);
+}
+
+/* INICIO SKILLS*/
+
+.skills {
+  background-color: rgb(255, 223, 175);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.h2-skills {
+  display: flex;
+  font-size: 40px;
+  color: rgb(255, 142, 10);
+  justify-content: center;
+  align-items: center;
+}
+.p-skills {
+  font-size: 20px;
+}
+.all-skills-icon {
+  min-width: 450px;
+  min-height: 450px;
+}
+.icon-skills {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.icon-img:hover {
+  transform: 0.3s;
+  border-radius: 28px;
+  background-color: rgb(255, 201, 119);
+  border-color: rgb(255, 142, 10);
+  cursor: pointer;
+}
+
+.name-icon {
+  font-size: 20px;
+  font-style: oblique;
+  border-radius: 10px;
+  background-color: white;
+  margin: 30px;
+}
+.name-icon:hover {
+  transform: 0, 3s;
+  background-color: rgb(255, 201, 119);
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: rgb(255, 142, 10);
+}
+/* FIN SKILLS*/
+
+/* INICIO PROYECTS*/
+.proyects {
+  background-color: rgb(250, 209, 149);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.h2-proyects {
+  display: flex;
+  font-size: 40px;
+  color: rgb(255, 142, 10);
+  justify-content: center;
+  align-items: center;
+}
+.p-proyects {
+  font-size: 20px;
+}
+.img-proyects {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+.divs-proyects {
+  display: flex;
+  margin: 25px;
+  justify-content: space-evenly;
+}
+.div-img-p {
+  border: 1px solid white;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+.div-img-p:hover {
+  transition: 0, 3s;
+  background-color: rgb(255, 201, 119);
+  border-radius: 25px;
+  border-color: rgb(255, 142, 10);
+}
+/* 100vw hace que me lo tome completo . no lo corta */
+
+.p-img-proyects {
+  font-size: 20px;
+  border-color: rgb(255, 142, 10);
+}
+.container-proyects {
+  display: flexbox;
+  margin: 10px;
+}
+/* FIN PROYECTS */
+
+/* INICIO CONTACT ME*/
+.contact-me {
+  display: flex;
+  background-color: rgb(248, 196, 117);
+  margin: 0;
+  padding: 0;
+}
+.div-contact {
+  border: 1px solid white;
+  /*flex-direction: r;
+  justify-content: center;
+  align-items: center;
+  text-align: center;*/
+}
+.h2-contact {
+  display: flex;
+  font-size: 40px;
+  color: rgb(255, 142, 10);
+  justify-content: center;
+}
+.p-contact {
+  font-size: 20px;
+  margin: 15px;
+}
+.ul-contact {
+  list-style: none;
+  flex-direction: column;
+  font-size: 20px;
+}
+.li-contact {
+  text-decoration:none;
+  margin: 10px;
+  padding: 10px;
+  
+}
+
+.section-contact{
+  display: inline-table;
+  justify-content: center;
+  
+}
+
+
+
 
 
 
